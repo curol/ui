@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@curol/tsconfig": "workspace:0.0.0",
+    "@curol/components": "workspace:0.0.0",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-docs": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",

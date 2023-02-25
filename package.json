@@ -1,6 +1,7 @@
 {
   "name": "ui",
   "private": true,
+  "version": "0.0.0",
   "author": {
     "name": "curol",
     "url": "https://curol.dev"

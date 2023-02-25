@@ -1,5 +1,10 @@
 {
+  "name": "ui",
   "private": true,
+  "author": {
+    "name": "curol",
+    "url": "https://curol.dev"
+  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --no-cache --continue",

@@ -9,7 +9,6 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@curol/components": "workspace:0.0.0",
     "@curol/core": "workspace:0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -24,7 +23,7 @@
     "@storybook/builder-vite": "^0.1.41",
     "@storybook/react": "^6.5.14",
     "@vitejs/plugin-react": "^1.3.2",
-    "eslint-config-ui": "workspace:0.0.0",
+    "@curol/eslint-config-ui": "workspace:*",
     "serve": "^13.0.4",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.3",

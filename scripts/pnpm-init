@@ -1,0 +1,19 @@
+#!/bin/bash
+
+pnpm init --yes | jq '.version = "0.0.0"' package.json
+
+# init_package_json="$(cat << EOF
+# {
+#   "name": "tailwind-config",
+#   "version": "0.0.0",
+#   "description": "",
+#   "main": "index.js",
+#   "scripts": {
+#     "test": "echo \"Error: no test specified\" && exit 1"
+#   },
+#   "keywords": [],
+#   "author": "",
+#   "license": "ISC"
+# }
+# EOF
+# )"

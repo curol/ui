@@ -1,8 +1,12 @@
 {
-  "name": "eslint-config-ui",
+  "name": "@curol/eslint-config-ui",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "url": "curol/ui",
+    "directory": "packages/eslint-config-ui"
+  },
   "dependencies": {
     "eslint-config-next": "latest",
     "eslint-config-prettier": "^8.3.0",

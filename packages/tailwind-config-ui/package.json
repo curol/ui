@@ -1,0 +1,23 @@
+{
+  "name": "@curol/tailwind-config-ui",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "url": "curol/ui",
+    "directory": "packages/tailwind-config-ui"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7",
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "tailwind-merge": "^1.8.0",
+    "tailwindcss-animate": "^1.0.5"
+  }
+}

@@ -1,7 +1,12 @@
-const path = require("path");
+const path = require("path")
+
+components_path = path.resolve(__dirname, "../../../packages/components/")
 
 module.exports = {
-  stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"],
+  stories: [
+    `${components_path}/**/*.stories.mdx`,
+    `${components_path}/**/*.stories.tsx`,
+  ],
   addons: [
     "@storybook/addon-links",
     // {
@@ -16,7 +21,7 @@ module.exports = {
     //     },
     //   },
     // },
-    "@storybook/addon-essentials"
+    "@storybook/addon-essentials",
   ],
   framework: "@storybook/react",
   core: {
@@ -29,21 +34,11 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "@curol/core",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/core/"
-            ),
-          },
-          {
-            find: "@curol/components",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/components/"
-            ),
+            find: "@curol/button",
+            replacement: path.resolve(__dirname, "../../../packages/button/"),
           },
         ],
       },
-    };
+    }
   },
-};
+}

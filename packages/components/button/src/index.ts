@@ -1,2 +1,5 @@
-import * as React from "react";
-export { Button, type ButtonProps } from "./Button";
+"use client"
+
+import * as React from "react"
+
+export { Button, type ButtonProps } from "./Button"

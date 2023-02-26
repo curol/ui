@@ -1,7 +1,10 @@
 {
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },
-    { "pattern": "packages/*/" }
+    { "pattern": "packages/*/" },
+    { "pattern": "packages/*/**/" }
   ],
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "eslint.packageManager": "pnpm",
+  "npm.packageManager": "pnpm"
 }

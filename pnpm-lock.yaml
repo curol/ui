@@ -31,6 +31,8 @@ importers:
       '@storybook/builder-vite': ^0.1.41
       '@storybook/react': ^6.5.14
       '@vitejs/plugin-react': ^1.3.2
+      autoprefixer: ^10.4.13
+      postcss: ^8.4.21
       react: ^18.2.0
       react-dom: ^18.2.0
       serve: ^13.0.4
@@ -52,6 +54,8 @@ importers:
       '@storybook/builder-vite': 0.1.41_makh2ik3sbu7pwo2blaxcidkze
       '@storybook/react': 6.5.16_cdmdg3ihbpiirul67mchxr2qri
       '@vitejs/plugin-react': 1.3.2
+      autoprefixer: 10.4.13_postcss@8.4.21
+      postcss: 8.4.21
       serve: 13.0.4
       tailwindcss: 3.2.7_postcss@8.4.21
       typescript: 4.9.5
@@ -91,6 +95,7 @@ importers:
   packages/components/avatar:
     specifiers:
       '@curol/eslint-config-ui': workspace:*
+      '@curol/icons': workspace:^0.0.0
       '@curol/tsconfig': workspace:*
       '@curol/utils': workspace:^0.0.0
       '@radix-ui/react-avatar': ^1.0.1
@@ -102,6 +107,7 @@ importers:
       tsup: ^5.10.1
       typescript: ^4.5.3
     dependencies:
+      '@curol/icons': link:../../icons
       '@curol/utils': link:../../utils
       '@radix-ui/react-avatar': 1.0.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -118,6 +124,7 @@ importers:
   packages/components/button:
     specifiers:
       '@curol/eslint-config-ui': workspace:*
+      '@curol/icons': workspace:^0.0.0
       '@curol/tsconfig': workspace:*
       '@curol/utils': workspace:^0.0.0
       '@types/react': ^18.0.9
@@ -129,6 +136,7 @@ importers:
       tsup: ^5.10.1
       typescript: ^4.5.3
     dependencies:
+      '@curol/icons': link:../../icons
       '@curol/utils': link:../../utils
       class-variance-authority: 0.4.0_typescript@4.9.5
       react: 18.2.0
@@ -145,6 +153,7 @@ importers:
   packages/components/div:
     specifiers:
       '@curol/eslint-config-ui': workspace:*
+      '@curol/icons': workspace:^0.0.0
       '@curol/tsconfig': workspace:*
       '@types/react': ^18.0.9
       '@types/react-dom': ^18.0.4
@@ -154,6 +163,7 @@ importers:
       tsup: ^5.10.1
       typescript: ^4.5.3
     dependencies:
+      '@curol/icons': link:../../icons
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -176,6 +186,31 @@ importers:
       eslint-config-prettier: 8.6.0_eslint@8.35.0
       eslint-config-turbo: 0.0.8_eslint@8.35.0
       eslint-plugin-react: 7.29.4_eslint@8.35.0
+
+  packages/icons:
+    specifiers:
+      '@curol/eslint-config-ui': workspace:*
+      '@curol/tsconfig': workspace:*
+      '@types/react': ^18.0.9
+      '@types/react-dom': ^18.0.4
+      class-variance-authority: ^0.4.0
+      eslint: ^8.15.0
+      lucide-react: ^0.115.0
+      react: ^18.1.0
+      tsup: ^5.10.1
+      typescript: ^4.5.3
+    dependencies:
+      lucide-react: 0.115.0_react@18.2.0
+    devDependencies:
+      '@curol/eslint-config-ui': link:../eslint-config-ui
+      '@curol/tsconfig': link:../tsconfig
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
+      class-variance-authority: 0.4.0_typescript@4.9.5
+      eslint: 8.35.0
+      react: 18.2.0
+      tsup: 5.12.9_typescript@4.9.5
+      typescript: 4.9.5
 
   packages/prettier-config-ui:
     specifiers:
@@ -9154,6 +9189,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide-react/0.115.0_react@18.2.0:
+    resolution: {integrity: sha512-VGL7jBKN6pEXi6peXoyn9t9O7olvinaAonnoe+iFi/F2q7/yQzAFM5KR1OY15u9PlrB3scI9HvcTFoOrIjUaVQ==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /magic-string/0.26.7:
     resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}

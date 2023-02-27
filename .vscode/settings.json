@@ -4,7 +4,9 @@
     { "pattern": "packages/*/" },
     { "pattern": "packages/*/**/" }
   ],
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "eslint.packageManager": "pnpm",
-  "npm.packageManager": "pnpm"
+  "npm.packageManager": "pnpm",
+  "mdx.experimentalLanguageServer": true,
+  "mdx.format.enable": false
 }

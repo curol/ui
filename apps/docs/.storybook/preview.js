@@ -1,6 +1,6 @@
 // .storybook/preview.js
 
-// import '@curol/components/dist/index.css'
+import '../globals.css'
 
 export const parameters = {
   layout: 'padded',

@@ -5,7 +5,6 @@ components_path = path.resolve(__dirname, "../../../packages/components/")
 module.exports = {
   stories: [
     `${components_path}/**/*.stories.mdx`,
-    `${components_path}/**/*.stories.tsx`,
   ],
   addons: [
     "@storybook/addon-links",

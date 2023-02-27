@@ -1,12 +1,13 @@
 import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs"
 
-import { Button } from "./button"
+import { Button } from "./Button"
+import {Mail, Loader2} from '@curol/icons'
 
 <Meta title="Components/button" component={Button} />
 
-# button
+# Button
 
-A very primitive button component as an example.
+Button component.
 
 ## Props
 
@@ -16,6 +17,30 @@ A very primitive button component as an example.
 
 <Canvas>
   <Story name="Default">
-    <Button>Hello</Button>
+    <Button>Button</Button>
+  </Story>
+  <Story name="Outline">
+    <Button variant="outline">Outline</Button>
+  </Story>
+  <Story name="Destructive">
+    <Button variant="destructive">Destructive</Button>
+  </Story>
+  <Story name="Ghost">
+    <Button variant="ghost">Ghost</Button>
+  </Story>
+  <Story name="Link">
+    <Button variant="link">Link</Button>
+  </Story>
+  <Story name="With Icon">
+    <Button>
+      <Mail className="mr-2 h-4 w-4" />
+      Login with Email
+    </Button>
+  </Story>
+  <Story name="Loading">
+    <Button disabled>
+      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+      Please wait
+    </Button>
   </Story>
 </Canvas>

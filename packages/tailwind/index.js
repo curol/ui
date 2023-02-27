@@ -4,8 +4,6 @@ const plugin = require("tailwindcss/plugin")
 /** @type {import('tailwindcss').Config} */
 const _config = {
   darkMode: ["class"],
-  // Paths are relative to your project root, not your tailwind.config.js file, so if your tailwind.config.js file is in a custom location, you should still write your paths relative to the root of your project.
-  content: ["pages/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,

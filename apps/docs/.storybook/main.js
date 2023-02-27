@@ -1,10 +1,10 @@
 const path = require("path")
 
-components_path = path.resolve(__dirname, "../../../packages/components/")
+const components_stories_path = path.resolve(__dirname, "../../../packages/components/")
 
 module.exports = {
   stories: [
-    `${components_path}/**/*.stories.mdx`,
+    `${components_stories_path}/**/src/**/*.stories.{mdx,tsx}`,
   ],
   addons: [
     "@storybook/addon-links",
@@ -31,12 +31,13 @@ module.exports = {
     return {
       ...config,
       resolve: {
-        alias: [
-          {
-            find: "@curol/button",
-            replacement: path.resolve(__dirname, "../../../packages/button/"),
-          },
-        ],
+        // For path alias imports to work in Storybook
+        // alias: [
+        //   {
+        //     find: "@curol/button",
+        //     replacement: path.resolve(__dirname, "../../../packages/button/"),
+        //   },
+        // ],
       },
     }
   },

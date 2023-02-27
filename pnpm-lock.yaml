@@ -22,6 +22,7 @@ importers:
     specifiers:
       '@curol/button': workspace:*
       '@curol/eslint-config-ui': workspace:*
+      '@curol/tailwind': workspace:^0.0.0
       '@curol/tsconfig': workspace:*
       '@storybook/addon-actions': ^6.5.14
       '@storybook/addon-docs': ^6.5.14
@@ -41,6 +42,7 @@ importers:
       vite: ^2.9.15
     dependencies:
       '@curol/button': link:../../packages/components/button
+      '@curol/tailwind': link:../../packages/tailwind
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:

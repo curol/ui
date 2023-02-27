@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook --docs",
-    "preview": "pnpm preview-storybook",
+    "preview": "pnpm build && pnpm preview-storybook",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules storybook-static"
   },
@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@curol/tailwind": "workspace:*",
     "@curol/eslint-config-ui": "workspace:*",
     "@curol/tsconfig": "workspace:*",
     "@storybook/addon-actions": "^6.5.14",

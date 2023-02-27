@@ -1,3 +1,3 @@
-# @curol/button
+# Button
 
-A button component for React.
+Button is the primary component. It has four possible states.

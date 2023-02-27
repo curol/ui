@@ -1,5 +1,5 @@
 {
-  "name": "@curol/button",
+  "name": "@curol/avatar",
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -16,6 +16,10 @@
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
     "lint": "eslint \"src/**/*.ts*\""
   },
+  "dependencies": {
+    "@curol/utils": "workspace:^0.0.0",
+    "@radix-ui/react-avatar": "^1.0.1"
+  },
   "devDependencies": {
     "@curol/eslint-config-ui": "workspace:*",
     "@curol/tsconfig": "workspace:*",
@@ -31,9 +35,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@curol/utils": "workspace:^0.0.0",
-    "class-variance-authority": "^0.4.0"
   }
 }

@@ -1,13 +1,15 @@
 {
-  "name": "@curol/tailwind-config-ui",
+  "name": "@curol/tailwind",
   "version": "0.0.0",
   "description": "",
+  "main": "index.js",
   "repository": {
     "url": "curol/ui",
-    "directory": "packages/tailwind-config-ui"
+    "directory": "packages/tailwind"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .turbo node_modules dist build .cache"
   },
   "keywords": [],
   "author": "",

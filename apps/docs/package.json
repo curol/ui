@@ -6,7 +6,7 @@
     "dev": "start-storybook -p 6006",
     "build": "build-storybook --docs",
     "preview-storybook": "serve storybook-static",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf .turbo && rm -rf node_modules storybook-static"
   },
   "dependencies": {
     "@curol/button": "workspace:*",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@curol/tsconfig": "workspace:*",
+    "@curol/eslint-config-ui": "workspace:*",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-docs": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",
@@ -23,7 +24,6 @@
     "@storybook/builder-vite": "^0.1.41",
     "@storybook/react": "^6.5.14",
     "@vitejs/plugin-react": "^1.3.2",
-    "@curol/eslint-config-ui": "workspace:*",
     "serve": "^13.0.4",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.3",

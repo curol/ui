@@ -1,3 +1,3 @@
 # @curol/button
 
-A button component.
+A button component for React.

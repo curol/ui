@@ -1,7 +1,12 @@
-import { Button } from './Button';
+import { Button as ButtonComponent } from './Button';
 import { Mail,Loader2 } from "@curol/icons"
 
-export default { title: 'Components/Button' };
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+export default { title: 'Components/Button', component: ButtonComponent } as ComponentMeta<typeof ButtonComponent>;
+
+// Template
+const Button: ComponentStory<typeof ButtonComponent> = ({children,...args}) => <ButtonComponent {...args} >{children}</ButtonComponent>;
 
 export const Default = () => <Button variant="default">Primary</Button>;
 

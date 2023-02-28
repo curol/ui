@@ -5,6 +5,7 @@ node_modules
 .github
 .next
 .vercel
+.ideas
 **/.next/**
 **/_next/**
 **/dist/**

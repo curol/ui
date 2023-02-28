@@ -10,10 +10,6 @@ const Button: ComponentStory<typeof ButtonComponent> = ({children,...args}) => <
 
 export const Default = () => <Button variant="default">Primary</Button>;
 
-export function Destructive() {
-  return <Button variant="destructive">Destructive</Button>
-}
-
 export function Outline() {
   return <Button variant="outline">Outline</Button>
 }
@@ -29,7 +25,6 @@ export function Ghost() {
 export function Link() {
   return <Button variant="link">Link</Button>
 }
-
 
 export function WithIcon() {
   return (
@@ -47,5 +42,3 @@ export function Loading() {
     </Button>
   )
 }
-
-

@@ -1,5 +1,11 @@
 # @curol/utils
 
+## 0.0.3
+
+### Patch Changes
+
+- Test bump
+
 ## 0.0.2
 
 ### Patch Changes

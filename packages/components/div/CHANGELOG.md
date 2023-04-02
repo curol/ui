@@ -1,5 +1,13 @@
 # @curol/div
 
+## 0.0.2
+
+### Patch Changes
+
+- V-0.0.2
+- Updated dependencies
+  - @curol/icons@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes

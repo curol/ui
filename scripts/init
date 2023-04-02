@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -ex
+
+rm -rf .git
+git init
+git add -A
+git commit -m 'init'
+git branch -M main
+git remote add origin https://github.com/curol/ui.git
+git push -u origin main -f

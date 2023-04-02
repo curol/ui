@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+get_version() {
+  _version=$(node -p "require('./package.json').version")
+  echo "$_version"
+}
+
+change_version() {
+  _version=$(node -p "require('./package.json').version")
+  _new_version=$(node -p "require('./package.json').version = '$_version'")
+
+  echo "Current version: $_version"
+  echo "New version: $_new_version"
+
+  node -p "require('./package.json').version = '$_new_version'"
+}
+
+jq_change_package_version() {
+  local _vers=$1
+
+  _version="$_vers" jq '.version = env._version' package.json \
+  > tmpfile && mv tmpfile package.json
+}
+
+rm_changelog() {
+  rm CHANGELOG.md
+}
+
+print_package_json() {
+  jq "." package.json
+}
+
+get_package_name() {
+  _package_name=$(node -p "require('./package.json').name")
+  echo "$_package_name"
+}
+
+get_package_dirs() {
+  _arr=$(fd --absolute-path package.json -x echo {//})
+  echo "$_arr"
+}
+
+print_package_dirs() {
+  local _arr=$(fd --absolute-path package.json -x echo {//})
+  local _num=0
+
+  for _dir in $_arr; do
+    _num=$(( _num + 1 ))
+
+    echo "${_num}.)" "$_dir"
+  done
+}

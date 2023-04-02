@@ -1,0 +1,28 @@
+{
+  "name": "@curol/prettier-config-ui",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "curol/ui",
+    "directory": "packages/prettier-config-ui"
+  },
+  "scripts": {
+    "release": "pnpm publish --access public",
+    "clean": "rm -rf node_modules .turbo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1"
+  }
+}

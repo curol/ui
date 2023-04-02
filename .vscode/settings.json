@@ -1,0 +1,21 @@
+{
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" },
+    { "pattern": "packages/*/**/" }
+  ],
+  "editor.formatOnSave": false,
+  "eslint.packageManager": "pnpm",
+  "npm.packageManager": "pnpm",
+  "mdx.experimentalLanguageServer": true,
+  "mdx.format.enable": false,
+  "tailwindCSS.suggestions": true,
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.ideas/**",
+    "**/.pnpm-store/**",
+    "**/.hg/**",
+    "**/.svn/**"
+  ],
+}

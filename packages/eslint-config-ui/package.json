@@ -1,0 +1,25 @@
+{
+  "name": "@curol/eslint-config-ui",
+  "description": "ESLint configuration for Next.JS + Turborepo + Prettier",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "curol/ui",
+    "directory": "packages/eslint-config-ui"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules dist build .cache"
+  },
+  "dependencies": {
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-turbo": "latest",
+    "eslint-plugin-react": "7.29.4",
+    "next": "^13.2.4"
+  }
+}

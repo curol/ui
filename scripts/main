@@ -1,0 +1,27 @@
+#!/bin/bash
+
+BASEDIR=$(dirname "$0")
+
+# shellcheck disable=SC1091
+source "$BASEDIR/lib"
+
+_main() {
+  cd packages || exit
+  _arr=$(get_package_dirs)
+  _num=0
+  _cmds=("$@")
+
+  for _dir in $_arr; do
+    cd "$_dir" || exit
+    _num=$(( _num + 1 ))
+
+    # Print path
+    echo "${_num}.)" "$_dir"
+    # Run command
+    $1 "${_cmds[@]:1}"
+
+    echo ""
+  done
+}
+
+_main "$@"

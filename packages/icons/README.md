@@ -1,0 +1,3 @@
+# @curol/icons
+
+React icons.

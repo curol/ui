@@ -1,0 +1,37 @@
+{
+  "name": "@curol/tailwind-plugin",
+  "version": "0.0.0",
+  "description": "Plugin for TailwindCSS.",
+  "type": "commonjs",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "curol/ui",
+    "directory": "packages/tailwind-plugin"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"src/**/*.js\"",
+    "clean": "rm -rf .turbo node_modules dist build .cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@curol/eslint-config-ui": "workspace:*",
+    "eslint": "^8.15.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7",
+    "tailwind-merge": "^1.8.0",
+    "tailwindcss-animate": "^1.0.5"
+  }
+}

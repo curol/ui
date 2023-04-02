@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "types": ["node"],
+    "outDir": "../../dist/node"
+  },
+  "extends": "@curol/tsconfig/node16.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

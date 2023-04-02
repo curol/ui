@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -ex
+
+
+fd \
+  --no-ignore \
+  --hidden \
+  --type d \
+  --max-depth 4 \
+  --print0 \
+  --absolute-path \
+  --no-follow \
+  'node_modules|.turbo|dist|build' \
+  packages | xargs -0 rm -rf
+
+fd \
+  --no-ignore \
+  --hidden \
+  --type d \
+  --max-depth 4 \
+  --print0 \
+  --absolute-path \
+  --no-follow \
+  'node_modules|.turbo|dist|build' \
+  apps | xargs -0 rm -rf
+
+rm -rf node_modules
+
+rm -rf pnpm-lock.yaml

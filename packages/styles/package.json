@@ -1,0 +1,25 @@
+{
+  "name": "@curol/styles",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "curol/ui",
+    "directory": "packages/styles"
+  },
+  "exports": {
+    "./css/*": "./src/css/*",
+    "./fonts/*": "./src/fonts/*",
+    "./package.json": "./package.json",
+    "./README.md": "./README.md"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .turbo node_modules dist build .cache"
+  },
+  "keywords": [],
+  "license": "MIT"
+}

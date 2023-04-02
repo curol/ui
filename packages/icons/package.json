@@ -1,0 +1,45 @@
+{
+  "name": "@curol/icons",
+  "description": "React icons",
+  "version": "0.0.0",
+  "source": "src/index.tsx",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "curol/ui",
+    "directory": "packages/icons"
+  },
+  "scripts": {
+    "release": "pnpm build && pnpm publish --access public",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "lucide-react": "^0.115.0"
+  },
+  "devDependencies": {
+    "@curol/eslint-config-ui": "workspace:*",
+    "@curol/tsconfig": "workspace:*",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "eslint": "^8.15.0",
+    "react": "^18.1.0",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.3",
+    "class-variance-authority": "^0.4.0"
+  }
+}

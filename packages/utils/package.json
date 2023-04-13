@@ -24,7 +24,8 @@
     "build:node": "tsup src/node/index.ts --format esm,cjs --dts-resolve --external react",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts-resolve --external react",
     "lint": "eslint \"src/**/*.ts*\"",
-    "clean": "rm -rf node_modules .turbo .tsup .cache dist"
+    "clean": "rm -rf node_modules .turbo .tsup .cache dist",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@curol/eslint-config-ui": "workspace:*",

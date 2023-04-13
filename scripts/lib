@@ -22,10 +22,6 @@ jq_change_package_version() {
   > tmpfile && mv tmpfile package.json
 }
 
-rm_changelog() {
-  rm CHANGELOG.md
-}
-
 print_package_json() {
   jq "." package.json
 }
@@ -49,4 +45,23 @@ print_package_dirs() {
 
     echo "${_num}.)" "$_dir"
   done
+}
+
+jq_add_script() {
+  local _name=$1
+  local _script=$2
+
+  jq ".scripts += {\"$_name\": \"$_script\"}" package.json > tmpfile \
+  && cat tmpfile \
+  && mv tmpfile package.json
+}
+
+rm_changelog() {
+  rm CHANGELOG.md
+}
+
+rm_file() {
+  local _file=$1
+
+  rm "$_file"
 }

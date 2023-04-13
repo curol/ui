@@ -26,6 +26,12 @@
     },
     "clean": {
       "cache": false
+    },
+    "build-storybook": {
+      "outputs": ["storybook-static/**"]
+    },
+    "typecheck": {
+      "outputs": ["dist/**"]
     }
   }
 }

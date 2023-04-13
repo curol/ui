@@ -26,7 +26,8 @@
     "clean": "rm -rf .turbo node_modules dist build .cache",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
     "lint": "eslint \"src/**/*.ts*\"",
-    "release": "pnpm build && pnpm publish"
+    "release": "pnpm build && pnpm publish",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@curol/eslint-config-ui": "workspace:*",

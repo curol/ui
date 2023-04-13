@@ -6,7 +6,7 @@ import { Div } from "../../../../packages/components/div/src/Div"
 // Metadata to configure component story
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta = {
-  title: "Example/Div",
+  title: "Examples/Div",
   component: Div,
   tags: ["autodocs"],
 } satisfies Meta<typeof Div>

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# 1.) Add
+# This command will ask you a series of questions, first about what packages you want to release, then what semver bump type for each package, then it will ask for a summary of the entire changeset. At the final step it will show the changeset it will generate, and confirm that you want to add it.
+# Once confirmed, the changeset will write a Markdown file that contains the summary and YAML front matter which stores the packages that will be released and the semver bump types for them.
+npx changeset
+
+# 2.) Release
+# When the maintainer wants to release packages, they should run `changeset version` and then `changeset publish`.
+
+# Version
+# Updates the versions for all packages described in changesets since last release along with any dependents inside the repo that are out of range.
+# Will also create/append to a CHANGELOG file for each package using the summaries from the changesets.
+npx changeset version
+
+# Publish
+# Publishes to NPM repo, and creates git tags.
+# Because this command assumes that last commit is the release commit you should not commit any changes between calling version and publish. These commands are separate to enable you to check if release commit is accurate
+npx changeset publish

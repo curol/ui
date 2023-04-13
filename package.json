@@ -17,6 +17,7 @@
     "preview": "turbo run preview --no-cache --continue --filter='@curol/docs'",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
+    "typecheck": "turbo run typecheck",
     "unpublish": "changeset version --bump=none && changeset publish --tag=unpublished"
   },
   "devDependencies": {

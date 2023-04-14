@@ -34,5 +34,5 @@
     // For remote host
     "workspaceMount": "source=${localWorkspaceFolderBasename},target=/workspaces/${localWorkspaceFolderBasename},type=volume",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-    "onCreateCommand": "sudo chown -R vscode:vscode /workspaces || true"
+    "onCreateCommand": "sudo chown -R vscode:vscode /workspaces || true; nvm use"
   }

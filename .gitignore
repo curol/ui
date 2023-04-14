@@ -14,3 +14,4 @@ storybook-static/
 .pnpm-store
 .ideas
 /test
+.vercel

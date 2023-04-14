@@ -9,6 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "build:packages": "turbo run build --filter='./packages/**/*' --no-cache --continue",
+    "build:docs": "turbo run build --filter=docs^...",
     "clean": "turbo run clean && rm -rf node_modules pnpm-lock.yaml",
     "changeset": "changeset",
     "dev": "turbo run dev --no-cache --continue --concurrency 15",

@@ -14,8 +14,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@curol/utils": "workspace:*",
     "@curol/icons": "workspace:*",
     "@curol/styles": "workspace:*",
+    "@curol/button": "workspace:*",
+    "@curol/div": "workspace:*",
+    "@curol/hello-world": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

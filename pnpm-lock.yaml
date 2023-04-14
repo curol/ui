@@ -20,9 +20,13 @@ importers:
 
   apps/docs:
     specifiers:
+      '@curol/button': workspace:*
+      '@curol/div': workspace:*
+      '@curol/hello-world': workspace:*
       '@curol/icons': workspace:*
       '@curol/styles': workspace:*
       '@curol/tailwind-plugin': workspace:*
+      '@curol/utils': workspace:*
       '@storybook/addon-essentials': ^7.0.0-rc.5
       '@storybook/addon-interactions': ^7.0.0-rc.5
       '@storybook/addon-links': ^7.0.0-rc.5
@@ -45,8 +49,12 @@ importers:
       typescript: ^4.9.3
       vite: ^4.2.0
     dependencies:
+      '@curol/button': link:../../packages/components/button
+      '@curol/div': link:../../packages/components/div
+      '@curol/hello-world': link:../../packages/components/hello-world
       '@curol/icons': link:../../packages/icons
       '@curol/styles': link:../../packages/styles
+      '@curol/utils': link:../../packages/utils
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:

@@ -74,6 +74,16 @@ To publish packages to a private npm organization scope, **remove** the followin
 - },
 ```
 
+## Vercel config
+
+Project '@curol/docs' is deployed to the platform vercel. `apps/docs/vercel.json` contains the config for deployment. For storybook static site, use
+
+```json
+{
+  "outputDirectory": "storybook-static"
+}
+```
+
 ## Resources
 
 - [Storybook design system tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/react/en/introduction/)
